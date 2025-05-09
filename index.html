@@ -38,7 +38,7 @@
                     <p>Start your day with our expertly crafted coffee blends.</p>
                 </div>
                 <div class="highlight-item">
-                    <img src="https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?auto=format&fit=crop&w=800&q=80" alt="Delicious Pastries">
+                    <img src="https://images.unsplash.com/photo-1621780155089-256e7906e002?auto=format&fit=crop&w=800&q=80" alt="Delicious Assortment of Cafe Pastries and Cakes">
                     <h3>Delicious Pastries</h3>
                     <p>Indulge in our daily selection of fresh pastries and treats.</p>
                 </div>
@@ -59,7 +59,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Cozy Corner Cafe - Charlotte, NC. Current Date: Friday, May 9, 2025.</p>
+            <p>&copy; 2025 Cozy Corner Cafe - Charlotte, NC. Current Date: <span id="currentDateFooter"></span>.</p>
             <p>Designed by [Swayam Tripathy]</p>
             <div class="validation-links">
                 <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener">HTML5</a> |
@@ -73,6 +73,14 @@
         var wcagLinkHomeEl = document.getElementById('wcagLinkHome');
         if (wcagLinkHomeEl) {
             wcagLinkHomeEl.href = 'https://wave.webaim.org/report#/' + encodeURIComponent(window.location.href);
+        }
+        // Add current date to footer
+        var dateSpan = document.getElementById('currentDateFooter');
+        if(dateSpan){
+            var today = new Date();
+            // Example: Friday, May 9, 2025 (This will reflect the user's current date)
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            dateSpan.textContent = today.toLocaleDateString('en-US', options);
         }
     </script>
     <script src="script.js"></script>
