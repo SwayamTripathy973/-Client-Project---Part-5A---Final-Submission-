@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cozy Corner Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Visit us, call us, or send us a message.</p>
+
+            <div class="contact-details">
+                <div class="detail-item">
+                    <h3>Address:</h3>
+                    <p>123 Main Street<br>Charlotte, NC 28202</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Phone:</h3>
+                    <p>(704) 555-9876</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Email:</h3>
+                    <p><a href="mailto:alice.johnson@cozycornercafe.com">alice.johnson@cozycornercafe.com</a></p>
+                </div>
+                <div class="detail-item">
+                    <h3>Hours:</h3>
+                    <p>Monday - Friday: 7:00 AM - 6:00 PM<br>Saturday - Sunday: 8:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send us a message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+                <div id="form-message" class="hidden"></div> </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Cozy Corner Cafe - Charlotte, NC. Current Date: Friday, May 9, 2025.</p>
+            <p>Designed by [Your Name/Student ID Here]</p>
+            <div class="validation-links">
+                <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener">HTML5</a> |
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener">CSS</a> |
+                <a href="https://wave.webaim.org/report#/" target="_blank" rel="noopener" id="wcagLinkContact">WCAG</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Dynamically set WCAG link to current page for contact.html
+        var wcagLinkContactEl = document.getElementById('wcagLinkContact');
+        if (wcagLinkContactEl) {
+            wcagLinkContactEl.href = 'https://wave.webaim.org/report#/' + encodeURIComponent(window.location.href);
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
