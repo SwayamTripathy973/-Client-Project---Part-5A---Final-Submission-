@@ -59,7 +59,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Cozy Corner Cafe - Charlotte, NC</p>
+            <p>&copy; 2025 Cozy Corner Cafe - Charlotte, NC. Current Date: Friday, May 9, 2025.</p>
             <p>Designed by [Your Name/Student ID Here]</p>
             <div class="validation-links">
                 <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener">HTML5</a> |
@@ -70,7 +70,10 @@
     </footer>
     <script>
         // Dynamically set WCAG link to current page for index.html
-        document.getElementById('wcagLinkHome').href = 'https://wave.webaim.org/report#/' + encodeURIComponent(window.location.href);
+        var wcagLinkHomeEl = document.getElementById('wcagLinkHome');
+        if (wcagLinkHomeEl) {
+            wcagLinkHomeEl.href = 'https://wave.webaim.org/report#/' + encodeURIComponent(window.location.href);
+        }
     </script>
     <script src="script.js"></script>
 </body>
