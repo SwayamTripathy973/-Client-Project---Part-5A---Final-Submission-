@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Cozy Corner Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-section">
+            <h2>Our Menu</h2>
+            <div class="menu-category">
+                <h3>Coffee & Espresso</h3>
+                <ul>
+                    <li><div class="menu-item"><span>Espresso</span><span>$3.00</span></div></li>
+                    <li><div class="menu-item"><span>Latte</span><span>$4.00</span></div></li>
+                    <li><div class="menu-item"><span>Cappuccino</span><span>$4.50</span></div></li>
+                    <li><div class="menu-item"><span>Americano</span><span>$3.50</span></div></li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3>Pastries</h3>
+                <ul>
+                    <li><div class="menu-item"><span>Croissant</span><span>$3.50</span></div></li>
+                    <li><div class="menu-item"><span>Muffin (Blueberry, Chocolate Chip)</span><span>$3.00</span></div></li>
+                    <li><div class="menu-item"><span>Scone</span><span>$4.00</span></div></li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3>Light Bites</h3>
+                <ul>
+                    <li><div class="menu-item"><span>Bagel with Cream Cheese</span><span>$4.50</span></div></li>
+                    <li><div class="menu-item"><span>Toast with Avocado</span><span>$6.00</span></div></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Cozy Corner Cafe - Charlotte, NC. Current Date: Friday, May 9, 2025.</p>
+            <p>Designed by [Your Name/Student ID Here]</p>
+            <div class="validation-links">
+                <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener">HTML5</a> |
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener">CSS</a> |
+                <a href="https://wave.webaim.org/report#/" target="_blank" rel="noopener" id="wcagLinkMenu">WCAG</a>
+            </div>
+        </div>
+    </footer>
+     <script>
+        // Dynamically set WCAG link to current page for menu.html
+        var wcagLinkMenuEl = document.getElementById('wcagLinkMenu');
+        if (wcagLinkMenuEl) {
+            wcagLinkMenuEl.href = 'https://wave.webaim.org/report#/' + encodeURIComponent(window.location.href);
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
