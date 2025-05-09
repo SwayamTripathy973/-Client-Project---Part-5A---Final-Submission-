@@ -78,7 +78,6 @@
         var dateSpan = document.getElementById('currentDateFooter');
         if(dateSpan){
             var today = new Date();
-            // Example: Friday, May 9, 2025 (This will reflect the user's current date)
             var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             dateSpan.textContent = today.toLocaleDateString('en-US', options);
         }
