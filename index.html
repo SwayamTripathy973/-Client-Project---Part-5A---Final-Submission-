@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Corner Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1350&q=80" alt="Cozy Cafe Interior" class="hero-image">
+            <div class="hero-text">
+                <h1>Welcome to Cozy Corner Cafe</h1>
+                <p>Your neighborhood spot for delicious coffee, pastries, and good times in Charlotte, NC.</p>
+                <a href="menu.html" class="button">View Our Menu</a>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <h2>Our Highlights</h2>
+            <div class="highlight-grid">
+                <div class="highlight-item">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Fresh Coffee">
+                    <h3>Freshly Brewed Coffee</h3>
+                    <p>Start your day with our expertly crafted coffee blends.</p>
+                </div>
+                <div class="highlight-item">
+                    <img src="https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?auto=format&fit=crop&w=800&q=80" alt="Delicious Pastries">
+                    <h3>Delicious Pastries</h3>
+                    <p>Indulge in our daily selection of fresh pastries and treats.</p>
+                </div>
+                <div class="highlight-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Cozy Coffee Shop Interior">
+                    <h3>Cozy Atmosphere</h3>
+                    <p>A warm and inviting space to relax, work, or meet friends.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="daily-special">
+            <h2>Today's Special</h2>
+            <p id="special-item">Chef's Choice Croissant - Flaky and fresh!</p>
+            <button id="get-new-special" class="button">Get Another Special</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Cozy Corner Cafe - Charlotte, NC</p>
+            <p>Designed by [Your Name/Student ID Here]</p>
+            <div class="validation-links">
+                <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener">HTML5</a> |
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener">CSS</a> |
+                <a href="https://wave.webaim.org/report#/" target="_blank" rel="noopener" id="wcagLinkHome">WCAG</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Dynamically set WCAG link to current page for index.html
+        document.getElementById('wcagLinkHome').href = 'https://wave.webaim.org/report#/' + encodeURIComponent(window.location.href);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
