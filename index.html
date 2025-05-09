@@ -38,7 +38,7 @@
                     <p>Start your day with our expertly crafted coffee blends.</p>
                 </div>
                 <div class="highlight-item">
-                    <img src="https://images.unsplash.com/photo-1621780155089-256e7906e002?auto=format&fit=crop&w=800&q=80" alt="Delicious Assortment of Cafe Pastries and Cakes">
+                    <img src="https://bakewithshivesh.com/wp-content/uploads/2021/07/IMG_0745-scaled.jpg" alt="Delicious Assortment of Pastries">
                     <h3>Delicious Pastries</h3>
                     <p>Indulge in our daily selection of fresh pastries and treats.</p>
                 </div>
@@ -78,6 +78,7 @@
         var dateSpan = document.getElementById('currentDateFooter');
         if(dateSpan){
             var today = new Date();
+            // Example: Friday, May 9, 2025 (This will reflect the user's current date when they open the page)
             var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             dateSpan.textContent = today.toLocaleDateString('en-US', options);
         }
