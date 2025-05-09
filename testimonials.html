@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Cozy Corner Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html" class="active">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="testimonials-section">
+            <h2>Customer Love</h2>
+
+            <div id="testimonial-container">
+                <div class="testimonial active-testimonial">
+                    <p>"The coffee here is fantastic, and the atmosphere is so cozy! It's my go-to spot for a morning pick-me-up."</p>
+                    <p class="author">- Sarah M.</p>
+                </div>
+
+                <div class="testimonial">
+                    <p>"I love the pastries at Cozy Corner Cafe. They are always fresh and delicious. The staff is friendly too!"</p>
+                    <p class="author">- John B.</p>
+                </div>
+
+                <div class="testimonial">
+                    <p>"A great place to relax and get some work done. The Wi-Fi is reliable, and the ambiance is perfect."</p>
+                    <p class="author">- Emily K.</p>
+                </div>
+
+                <div class="testimonial">
+                    <p>"The best cafe in Charlotte! Their commitment to quality and community really shines through."</p>
+                    <p class="author">- David L.</p>
+                </div>
+            </div>
+            <button id="next-testimonial-btn" class="button">Next Testimonial</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Cozy Corner Cafe - Charlotte, NC. Current Date: Friday, May 9, 2025.</p>
+            <p>Designed by [Your Name/Student ID Here]</p>
+            <div class="validation-links">
+                <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener">HTML5</a> |
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener">CSS</a> |
+                <a href="https://wave.webaim.org/report#/" target="_blank" rel="noopener" id="wcagLinkTestimonials">WCAG</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Dynamically set WCAG link to current page for testimonials.html
+        var wcagLinkTestimonialsEl = document.getElementById('wcagLinkTestimonials');
+        if (wcagLinkTestimonialsEl) {
+            wcagLinkTestimonialsEl.href = 'https://wave.webaim.org/report#/' + encodeURIComponent(window.location.href);
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
